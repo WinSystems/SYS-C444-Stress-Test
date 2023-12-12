@@ -146,7 +146,7 @@ def log_temperature0():
 
             except Exception as e:
                 log.error(f"Temperature test failed: {e}")
-                test_status["TEMP0"] = "Failed"
+                test_status["TEMP0"]["status"] = "Failed"
         else:
             test_status["TEMP0"]["status"] = "Idle"
             time.sleep(1)
