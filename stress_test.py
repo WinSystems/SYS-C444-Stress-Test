@@ -894,6 +894,12 @@ def handle_additional_input(input_win, key):
     pass
 
 def run_curses(stdscr):
+    absolute_path = os.path.abspath("loopback.so")
+    my_functions = ctypes.CDLL(absolute_path)
+
+    while True:
+        #do nothing=
+        
     # stdscr.curs_set(0)
 
     log.info("SYSTEM-TEST: CAN: Setting up devices")
