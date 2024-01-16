@@ -15,7 +15,7 @@
 #define  USE_OTHER_CONFIG
 
 /* API library */
-extern char *comports [MAX_COM_NUM];
+char *comports [MAX_COM_NUM] = {"can0", "can1"};
 
 /* global variables */
 int              com_port;
