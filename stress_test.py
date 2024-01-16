@@ -899,7 +899,8 @@ def run_curses(stdscr):
 
     while True:
         #do nothing=
-        
+        ia = True
+
     # stdscr.curs_set(0)
 
     log.info("SYSTEM-TEST: CAN: Setting up devices")
