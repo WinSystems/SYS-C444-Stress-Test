@@ -29,6 +29,7 @@ import serial
 import curses
 import psutil
 import  json 
+import ctypes
 from datetime import datetime
 
 #Modify these to set default state of the test bruh 
