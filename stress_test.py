@@ -659,43 +659,44 @@ def can_bus_test(test_name, bus_name):
     global test_status, exit_flag
     timeout = 5.0
     bus = can.interface.Bus(bus_name, bustype='socketcan')
+    log.info("SYSTEM-TEST: CAN BUS on Stand By")     
     msg_err = None
-    while not exit_flag:
-        #Check if the test is enabled
-        if test_status[test_name]["enabled"]:
+    # while not exit_flag:
+    #     #Check if the test is enabled
+    #     if test_status[test_name]["enabled"]:
             
-            found_test = False
-            try:
-                msg = bus.recv(timeout=2)  # Receive a message
-                msg_err = msg
-                if msg is not None:
-                    # Check if 'TEST' is in the message data
-                    if 'TEST' in msg.data.decode('utf-8', errors='ignore'):
-                        log.info(f"CAN: Recieved: {msg}")
-                        found_test = True
-                        # Wait for the specified interval before reading the next message
-                        test_status[test_name]["status"] = "Running"
-                    else:
-                        log.error(f"CAN: Wrong Data {msg}")
+    #         found_test = False
+    #         try:
+    #             msg = bus.recv(timeout=2)  # Receive a message
+    #             msg_err = msg
+    #             if msg is not None:
+    #                 # Check if 'TEST' is in the message data
+    #                 if 'TEST' in msg.data.decode('utf-8', errors='ignore'):
+    #                     log.info(f"CAN: Recieved: {msg}")
+    #                     found_test = True
+    #                     # Wait for the specified interval before reading the next message
+    #                     test_status[test_name]["status"] = "Running"
+    #                 else:
+    #                     log.error(f"CAN: Wrong Data {msg}")
 
-            except Exception as e:
-                log.error(f"SYSTEM-TEST: CAN TEST Error: {e}")
-                time.sleep(0.1)
+    #         except Exception as e:
+    #             log.error(f"SYSTEM-TEST: CAN TEST Error: {e}")
+    #             time.sleep(0.1)
 
-            if not found_test:
-                log.error(f"SYSTEM-TEST: CAN TEST Failed. Data: {msg_err}")
-                test_status[test_name]["status"] = "Failed"
+    #         if not found_test:
+    #             log.error(f"SYSTEM-TEST: CAN TEST Failed. Data: {msg_err}")
+    #             test_status[test_name]["status"] = "Failed"
 
-            time.sleep(test_status[test_name]["interval"]/1000.0)
-        else:
-            #Test on Idle
-            test_status[test_name]["status"] = "Idle"
-            time.sleep(1)
-    log.info("SYSTEM-TEST: Closing CAN TEST Thread")
-    try:
-        bus.shutdown()
-    except Exception as e:
-        log.info(f"SYSTEM-TEST: CAN Test Error: {e}")
+    #         time.sleep(test_status[test_name]["interval"]/1000.0)
+    #     else:
+    #         #Test on Idle
+    #         test_status[test_name]["status"] = "Idle"
+    #         time.sleep(1)
+    # log.info("SYSTEM-TEST: Closing CAN TEST Thread")
+    # try:
+    #     bus.shutdown()
+    # except Exception as e:
+    #     log.info(f"SYSTEM-TEST: CAN Test Error: {e}")
 
 def setup_serial_port():
     if os.geteuid() != 0:
@@ -872,18 +873,18 @@ def handle_input(stdscr):
                 "TEMP0": {"status": "State Reset", "interval": 60000, "enabled": False},
                 "TEMP1": {"status": "State Reset", "interval": 60000, "enabled": False},
                 "SPI": {"status": "State Reset", "interval": 1000, "enabled": False},
-                "GPIO": {"status": "State Reset", "interval": 1000, "enabled": False},
-                "CAN": {"status": "State Reset", "interval": 1000, "enabled": False},
+                "GPIO": {"status": "State Reset", "interval": 1000, "enabled": True},
+                "CAN": {"status": "State Reset", "interval": 1000, "enabled": True},
                 "Memory": {"status": "State Reset", "interval": 1000, "enabled": False},
                 "Ethernet0": {"status": "State Reset", "interval": 1000, "enabled": False},
                 "Ethernet1": {"status": "State Reset", "interval": 1000, "enabled": False},
                 "Wifi": {"status": "State Reset", "interval": 1000, "enabled": False},
-                "UART": {"status": "State Reset", "interval": 1000, "enabled": False},
+                "UART": {"status": "State Reset", "interval": 1000, "enabled": True},
                 "USB0": {"status": "State Reset", "interval": 1000, "enabled": False},
                 "USB1": {"status": "State Reset", "interval": 1000, "enabled": False},
                 "EMMC": {"status": "State Reset", "interval": 1000, "enabled": False},
                 "SDCARD": {"status": "State Reset", "interval": 1000, "enabled": False},
-                "JSON": {"status": "State Reset", "interval": 1000, "enabled": False}
+                "JSON": {"status": "State Reset", "interval": 1000, "enabled": True}
             }
         stdscr.clear()
     elif key != -1:  # Any other key
@@ -894,12 +895,6 @@ def handle_additional_input(input_win, key):
     pass
 
 def run_curses(stdscr):
-    absolute_path = os.path.abspath("loopback.so")
-    my_functions = ctypes.CDLL(absolute_path)
-
-    while True:
-        #do nothing=
-        ia = True
 
     # stdscr.curs_set(0)
 
