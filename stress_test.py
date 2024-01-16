@@ -37,19 +37,19 @@ test_status = {
     "TEMP0": {"status": "Not Started", "interval": 60000, "enabled": False},
     "TEMP1": {"status": "Not Started", "interval": 60000, "enabled": False},
     "SPI": {"status": "Not Started", "interval": 1000, "enabled": False},
-    "GPIO": {"status": "Not Started", "interval": 1000, "enabled": False},
-    "CAN0": {"status": "Not Started", "interval": 1000, "enabled": False},
-    "CAN1": {"status": "Not Started", "interval": 1000, "enabled": False},
+    "GPIO": {"status": "Not Started", "interval": 1000, "enabled": True},
+    "CAN0": {"status": "Not Started", "interval": 1000, "enabled": True},
+    "CAN1": {"status": "Not Started", "interval": 1000, "enabled": True},
     "Memory": {"status": "Not Started", "interval": 1000, "enabled": False},
     "Ethernet0": {"status": "Not Started", "interval": 1000, "enabled": False},
     "Ethernet1": {"status": "Not Started", "interval": 1000, "enabled": False},
     "Wifi": {"status": "Not Started", "interval": 1000, "enabled": False},
-    "UART": {"status": "Not Started", "interval": 1000, "enabled": False},
+    "UART": {"status": "Not Started", "interval": 1000, "enabled": True},
     "USB0": {"status": "Not Started", "interval": 1000, "enabled": False},
     "USB1": {"status": "Not Started", "interval": 1000, "enabled": False},
     "EMMC": {"status": "Not Started", "interval": 1000, "enabled": False},
     "SDCARD": {"status": "Not Started", "interval": 1000, "enabled": False},
-    "JSON": {"status": "Not Started", "interval": 60000, "enabled": False}
+    "JSON": {"status": "Not Started", "interval": 60000, "enabled": True}
 }
 # Global variables
 spi_device = None
@@ -661,6 +661,7 @@ def can_bus_test(test_name, bus_name):
     bus = can.interface.Bus(bus_name, bustype='socketcan')
     log.info("SYSTEM-TEST: CAN BUS on Stand By")     
     msg_err = None
+    test_status[test_name]["status"] = "Running"
     # while not exit_flag:
     #     #Check if the test is enabled
     #     if test_status[test_name]["enabled"]:
@@ -873,18 +874,18 @@ def handle_input(stdscr):
                 "TEMP0": {"status": "State Reset", "interval": 60000, "enabled": False},
                 "TEMP1": {"status": "State Reset", "interval": 60000, "enabled": False},
                 "SPI": {"status": "State Reset", "interval": 1000, "enabled": False},
-                "GPIO": {"status": "State Reset", "interval": 1000, "enabled": True},
-                "CAN": {"status": "State Reset", "interval": 1000, "enabled": True},
+                "GPIO": {"status": "State Reset", "interval": 1000, "enabled": False},
+                "CAN": {"status": "State Reset", "interval": 1000, "enabled": False},
                 "Memory": {"status": "State Reset", "interval": 1000, "enabled": False},
                 "Ethernet0": {"status": "State Reset", "interval": 1000, "enabled": False},
                 "Ethernet1": {"status": "State Reset", "interval": 1000, "enabled": False},
                 "Wifi": {"status": "State Reset", "interval": 1000, "enabled": False},
-                "UART": {"status": "State Reset", "interval": 1000, "enabled": True},
+                "UART": {"status": "State Reset", "interval": 1000, "enabled": False},
                 "USB0": {"status": "State Reset", "interval": 1000, "enabled": False},
                 "USB1": {"status": "State Reset", "interval": 1000, "enabled": False},
                 "EMMC": {"status": "State Reset", "interval": 1000, "enabled": False},
                 "SDCARD": {"status": "State Reset", "interval": 1000, "enabled": False},
-                "JSON": {"status": "State Reset", "interval": 1000, "enabled": True}
+                "JSON": {"status": "State Reset", "interval": 1000, "enabled": False}
             }
         stdscr.clear()
     elif key != -1:  # Any other key
