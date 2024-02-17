@@ -29,7 +29,7 @@ import serial
 import curses
 import psutil
 import  json 
-import ctypes
+from ctypes import *
 from datetime import datetime
 
 #Modify these to set default state of the test bruh 
@@ -542,6 +542,31 @@ def run_can_loopback_test(interface_name, can_id, message):
     # Cleanup
     bus.shutdown()
 
+def run_inodisk_can_loopback_test():
+    try:
+        log.info(f"Starting INODISK loopback thread for.")
+        global exit_flag, test_status
+        while not exit_flag:
+            if test_status[test_name]["enabled"]:
+
+
+                    result = subprocess.run(['ping', '-I', interface, '-c', '1', destination], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+                    if result.returncode == 0:
+                        log.info(f"{interface}: Ping successful")
+                        test_status[test_name]["status"] = "Running"
+                    else:
+                        log.error(f"{interface}: Ping failed with return code {result.returncode}")
+                        test_status[test_name]["status"] = "Failed"
+                    time.sleep(test_status[test_name]["interval"]/1000.0)
+            else:
+                test_status[test_name]["status"] = "Idle"
+                time.sleep(1)
+
+    except Exception as e:
+        log.error(f"Error INODISK loopback test: {e}")
+    log.info(f"Stopping INODISK loopback test")
+
+
 
 def ping_from_interface(interface, test_name, destination="8.8.8.8"):
     try:
@@ -896,11 +921,11 @@ def handle_additional_input(input_win, key):
     pass
 
 def run_curses(stdscr):
-
+    libc = CDLL("libc.so.6")
     # stdscr.curs_set(0)
 
     log.info("SYSTEM-TEST: CAN: Setting up devices")
-    setup_can_devices("can0", "can1")
+    # setup_can_devices("can0", "can1")
 
     draw_thread = threading.Thread(target=draw_menu, args=(stdscr,))
     # input_thread = threading.Thread(target=handle_input, args=(stdscr,))

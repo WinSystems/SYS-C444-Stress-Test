@@ -15,7 +15,7 @@
 #define  USE_OTHER_CONFIG
 
 /* API library */
-char *comports [MAX_COM_NUM] = {"can0", "can1"};
+extern char *comports [MAX_COM_NUM];
 
 /* global variables */
 int              com_port;
@@ -37,6 +37,65 @@ static void data_switch(char **data, int cnt);
 static unsigned char hex_2_dec(char ch_high, char ch_low);
 static void print_data(CAN_FRAME_INFO frame_info, bool is_send, bool is_new);
 static bool time_out_fx (struct tm start, unsigned short start_ms, struct tm *now, unsigned short now_ms, unsigned int interval);
+
+
+/*----------------------------------------------------------------*/
+int main(int argc, char *argv[])
+{
+  int     rtn;
+  FILE   *fptr = NULL;
+
+  /* open ini */
+  rtn = open_ini();
+  if (rtn)
+  {
+    if (rtn == 1)
+      printf("Open %s failed !\n", INI_FILE);
+    else if (rtn == 2)
+      printf("Open test file failed !\n");
+
+    return 1;
+  }
+
+  /* start testing */
+  rtn = start_testing();
+  if (rtn == 0)  is_pass = true;
+  else           is_pass = false;
+
+  /* Write to log file */
+  fptr = fopen(log_file, "w");
+  if (fptr)
+  {
+    fprintf(fptr, "COM port  = %s\n", comports[com_port]);
+    fprintf(fptr, "baudrate  = %d\n", baudrate);
+    fprintf(fptr, "interval  = %d [ms]\n", interval);
+    fprintf(fptr, "test_time = %d [min]\n", test_time);
+    fprintf(fptr, "\n");
+
+    if (is_pass)
+    {
+      fprintf(fptr, "Pass !\n");
+      printf("Pass !\n");
+    }
+    else
+    {
+      fprintf(fptr, "Failed !\n");
+      printf("Failed !\n");
+    }
+
+    fclose(fptr);
+  }
+  else
+  {
+    printf("Save to %s failed !\n", log_file);
+    return 1;
+  }
+
+  return 0;
+
+} /* END: main() */
+
+
 
 /*----------------------------------------------------------------*/
 static int open_ini(void)
@@ -415,7 +474,7 @@ static void print_data(CAN_FRAME_INFO frame_info, bool is_send, bool is_new)
 
   if(is_new)
   {
-    system("clear");
+    //system("clear");
     printf("Round %u:\n", round);
     printf("===========");
     round++;
