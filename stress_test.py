@@ -726,12 +726,11 @@ def can_bus_test_inodisk():
                  log.error(f"SYSTEM-TEST: CAN TEST Error: {e}")
                  time.sleep(0.1)
 
-
              time.sleep(test_status["CAN"]["interval"]/1000.0)
-         else:
-             #Test on Idle
-             test_status["CAN"]["status"] = "Idle"
-             time.sleep(1)
+        else:
+            #Test on Idle
+            test_status["CAN"]["status"] = "Idle"
+            time.sleep(1)
 
     log.info("SYSTEM-TEST: Closing CAN TEST Thread")
      
