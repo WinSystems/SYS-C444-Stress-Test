@@ -922,7 +922,7 @@ def handle_additional_input(input_win, key):
     pass
 
 def run_curses(stdscr):
-    libc = CDLL("libc.so.6")
+    libc = CDLL("Loopback_EMUC2/loopback.so")
     # stdscr.curs_set(0)
 
     log.info("SYSTEM-TEST: CAN: Setting up devices")
