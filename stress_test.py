@@ -59,6 +59,7 @@ exit_flag = False
 last_update_time = 0
 temperature = 0
 temperature1 = 0
+inodisk_c_lib = None
 # Set up logging
 log = logging.getLogger(__name__)
 log.addHandler(JournalHandler())
@@ -675,25 +676,34 @@ def continuous_ethernet_loopback_testing(ip_eth1, port, message, test_duration, 
     log.info("Completed continuous Ethernet loopback testing.")
 
 
-def can_bus_test(test_name, bus_name):
+def can_bus_test_inodisk():
     """
-    Continuously reads messages from a CAN bus and checks for the string 'TEST'.
+    This function will use the InoDisk CAN BUS loopback functions written in C.
     
-    :param bus: The CAN bus interface to read from.
     """
     log.info("SYSTEM-TEST: Starting CAN TEST Thread")     
     global test_status, exit_flag
     timeout = 5.0
-    bus = can.interface.Bus(bus_name, bustype='socketcan')
     log.info("SYSTEM-TEST: CAN BUS on Stand By")     
     msg_err = None
-    test_status[test_name]["status"] = "Running"
-    # while not exit_flag:
-    #     #Check if the test is enabled
-    #     if test_status[test_name]["enabled"]:
+    test_status["CAN"]["status"] = "Running"
+    #Open Ini file
+    ret = inodisk_c_lib.open_init()
+    if ret:
+        log.info("SYSTEM-TEST: Failed to open .ini configuration file.")
+        #We disable CAN testing because .ini file was not found
+        test_status["CAN"]["enabled"] = False
+        test_status["CAN"]["status"] = "Failed"
+        return
+    else:
+        log.info("SYSTEM-TEST: Sucessfully opened .ini configuration file.")
+
+    while not exit_flag:
+        #Check if the test is enabled
+        if test_status["CAN"]["enabled"]:
             
-    #         found_test = False
-    #         try:
+             loopback_status = False
+             try:
     #             msg = bus.recv(timeout=2)  # Receive a message
     #             msg_err = msg
     #             if msg is not None:
@@ -705,25 +715,28 @@ def can_bus_test(test_name, bus_name):
     #                     test_status[test_name]["status"] = "Running"
     #                 else:
     #                     log.error(f"CAN: Wrong Data {msg}")
+                ret = inodisk_c_lib.start_testing()
+                if not ret:
+                    test_status["CAN"]["status"] = "Running"
+                else:
+                    test_status["CAN"]["status"] = "Failed"
 
-    #         except Exception as e:
-    #             log.error(f"SYSTEM-TEST: CAN TEST Error: {e}")
-    #             time.sleep(0.1)
 
-    #         if not found_test:
-    #             log.error(f"SYSTEM-TEST: CAN TEST Failed. Data: {msg_err}")
-    #             test_status[test_name]["status"] = "Failed"
+             except Exception as e:
+                 log.error(f"SYSTEM-TEST: CAN TEST Error: {e}")
+                 time.sleep(0.1)
 
-    #         time.sleep(test_status[test_name]["interval"]/1000.0)
-    #     else:
-    #         #Test on Idle
-    #         test_status[test_name]["status"] = "Idle"
-    #         time.sleep(1)
-    # log.info("SYSTEM-TEST: Closing CAN TEST Thread")
-    # try:
-    #     bus.shutdown()
-    # except Exception as e:
-    #     log.info(f"SYSTEM-TEST: CAN Test Error: {e}")
+
+             time.sleep(test_status["CAN"]["interval"]/1000.0)
+         else:
+             #Test on Idle
+             test_status["CAN"]["status"] = "Idle"
+             time.sleep(1)
+
+    log.info("SYSTEM-TEST: Closing CAN TEST Thread")
+     
+    except Exception as e:
+        log.info(f"SYSTEM-TEST: CAN Test Error: {e}")
 
 def setup_serial_port():
     if os.geteuid() != 0:
@@ -922,7 +935,7 @@ def handle_additional_input(input_win, key):
     pass
 
 def run_curses(stdscr):
-    libc = cdll.LoadLibrary("./Loopback_EMUC2/loopback.so")
+    inodisk_c_lib = cdll.LoadLibrary("./Loopback_EMUC2/loopback.so")
     # stdscr.curs_set(0)
 
     log.info("SYSTEM-TEST: CAN: Setting up devices")
