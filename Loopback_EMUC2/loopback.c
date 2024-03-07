@@ -30,8 +30,8 @@ bool             is_pass = false;
 
 
 /* static function */
-static int  open_ini(void);
-static int  start_testing(void);
+int  open_ini(void);
+int  start_testing(void);
 static void id_switch(char **id, int cnt);
 static void data_switch(char **data, int cnt);
 static unsigned char hex_2_dec(char ch_high, char ch_low);
@@ -98,7 +98,7 @@ int main(int argc, char *argv[])
 
 
 /*----------------------------------------------------------------*/
-static int open_ini(void)
+int open_ini(void)
 {
   FILE  *fptr_1 = NULL;
   FILE  *fptr_2 = NULL;
@@ -142,7 +142,7 @@ static int open_ini(void)
 
 
 /*----------------------------------------------------------------*/
-static int start_testing(void)
+int start_testing(void)
 {
   int                  i;
   int                  j;
