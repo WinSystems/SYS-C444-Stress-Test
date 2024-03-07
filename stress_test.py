@@ -734,9 +734,6 @@ def can_bus_test_inodisk():
 
     log.info("SYSTEM-TEST: Closing CAN TEST Thread")
      
-    except Exception as e:
-        log.info(f"SYSTEM-TEST: CAN Test Error: {e}")
-
 def setup_serial_port():
     if os.geteuid() != 0:
         log.info("This function needs to be run as root.")
