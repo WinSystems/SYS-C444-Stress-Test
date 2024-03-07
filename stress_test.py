@@ -688,7 +688,7 @@ def can_bus_test_inodisk():
     msg_err = None
     test_status["CAN"]["status"] = "Running"
     #Open Ini file
-    ret = inodisk_c_lib.open_init()
+    ret = inodisk_c_lib.open_ini()
     if ret:
         log.info("SYSTEM-TEST: Failed to open .ini configuration file.")
         #We disable CAN testing because .ini file was not found
