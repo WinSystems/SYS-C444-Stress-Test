@@ -177,7 +177,7 @@ int start_testing(void)
     }
     if(rtn)
     {
-      printf("Can not find EMUC2.0 device !\n");
+      //printf("Can not find EMUC2.0 device !\n");
       return 1;
     }
     else
@@ -188,7 +188,7 @@ int start_testing(void)
     rtn = EMUCOpenDevice(com_port);
     if (rtn)
     {
-      printf("Open COM port %s failed !\n", comports[com_port]);
+      //printf("Open COM port %s failed !\n", comports[com_port]);
       return 1;
     }
   }
@@ -198,7 +198,7 @@ int start_testing(void)
   rtn = EMUCInitCAN(com_port, EMUC_INACTIVE, EMUC_INACTIVE);
   if (rtn)
   {
-    printf("EMUC initial CAN failed !\n");
+    //printf("EMUC initial CAN failed !\n");
     return 1;
   }
 
@@ -206,7 +206,7 @@ int start_testing(void)
   rtn = EMUCSetBaudRate(com_port, baudrate, baudrate);
   if (rtn)
   {
-    printf("EMUC set baud rate failed !\n");
+    //printf("EMUC set baud rate failed !\n");
     return 1;
   }
 
@@ -215,7 +215,7 @@ int start_testing(void)
     rtn = EMUCSetErrorType(com_port, EMUC_DIS_ALL);
     if (rtn)
     {
-      printf("EMUC set error type failed !\n");
+      //printf("EMUC set error type failed !\n");
       return 1;
     }
 
@@ -223,7 +223,7 @@ int start_testing(void)
     rtn = EMUCSetMode(com_port, EMUC_NORMAL, EMUC_NORMAL);
     if (rtn)
     {
-      printf("EMUC set mode failed !\n");
+      //printf("EMUC set mode failed !\n");
       return 1;
     }
 
@@ -232,7 +232,7 @@ int start_testing(void)
     rtn = EMUCClearFilter(com_port, CAN_port);
     if (rtn)
     {
-      printf("EMUC CAN 1 clear filter failed !\n");
+      //printf("EMUC CAN 1 clear filter failed !\n");
       return 1;
     }
 
@@ -240,7 +240,7 @@ int start_testing(void)
     rtn = EMUCClearFilter(com_port, CAN_port);
     if (rtn)
     {
-      printf("EMUC CAN 2 clear filter failed !\n");
+      //printf("EMUC CAN 2 clear filter failed !\n");
       return 1;
     }
   #endif
@@ -249,7 +249,7 @@ int start_testing(void)
   rtn = EMUCInitCAN(com_port, EMUC_ACTIVE, EMUC_ACTIVE);
   if (rtn)
   {
-    printf("EMUC initial CAN failed !\n");
+    //printf("EMUC initial CAN failed !\n");
     return 1;
   }
 
@@ -258,7 +258,7 @@ int start_testing(void)
 
   if (!fptr)
   {
-    printf("Open %s failed !\n", test_file);
+    //printf("Open %s failed !\n", test_file);
     return 1;
   }
   else
@@ -401,7 +401,7 @@ int start_testing(void)
       break;
     }
   }
-
+  EMUCCloseDevice(com_port);
   return 0;
 
 } /* END: start_testing() */
@@ -475,37 +475,37 @@ static void print_data(CAN_FRAME_INFO frame_info, bool is_send, bool is_new)
   if(is_new)
   {
     //system("clear");
-    printf("Round %u:\n", round);
-    printf("===========");
+    //printf("Round %u:\n", round);
+    //printf("===========");
     round++;
   }
 
   if (is_send)
   {
-    printf("\n---------------------------------------------------------\n");
-    printf("Send: ");
+    //printf("\n---------------------------------------------------------\n");
+    //printf("Send: ");
   }
-  else
-    printf("Recv: ");
+  //else
+    //printf("Recv: ");
 
   /* CAN port & cnt */
   if (frame_info.CAN_port == EMUC_CAN_1)
   {
-    printf("(CAN 1) ");
+    //printf("(CAN 1) ");
   }
   else if (frame_info.CAN_port == EMUC_CAN_2)
   {
-    printf("(CAN 2) ");
+    //printf("(CAN 2) ");
   }
 
   /* ID */
-  printf("ID: %08X; ", frame_info.id);
+  //printf("ID: %08X; ", frame_info.id);
 
   /* Data */
-  printf("Data: ");
-  for (i = 0; i<frame_info.dlc; i++)
-    printf("%02X ", frame_info.data[i]);
-  printf("\n");
+  //printf("Data: ");
+  //for (i = 0; i<frame_info.dlc; i++)
+    //printf("%02X ", frame_info.data[i]);
+  //printf("\n");
 
 } /* END: print_data() */
 

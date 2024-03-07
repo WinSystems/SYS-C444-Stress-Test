@@ -1,0 +1,2722 @@
+[
+    {
+        "timestamp": "2024-03-07T18:39:03.339191",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Failed",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Not Started",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T18:39:39.244664",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Failed",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Not Started",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T18:40:00.065437",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Failed",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Not Started",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T18:43:30.792140",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Failed",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Not Started",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T18:44:01.648715",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Failed",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Not Started",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T18:47:07.982745",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Failed",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Not Started",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T18:47:21.053390",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Failed",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Not Started",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T18:49:48.443470",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Failed",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Not Started",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T18:50:05.719804",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Failed",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Not Started",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T18:51:05.810883",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Failed",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T18:53:37.573687",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Not Started",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T18:58:40.163577",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Not Started",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T18:59:56.815654",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Not Started",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T19:00:55.872856",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Not Started",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T19:01:57.071645",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Not Started",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T19:03:13.952960",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Not Started",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T19:05:51.804356",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Not Started",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T19:06:51.882902",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "CAN": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": true
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T19:07:04.797449",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Not Started",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T19:08:49.755340",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Not Started",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T19:09:49.874262",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Failed",
+                "interval": 1000,
+                "enabled": true
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T19:10:49.985312",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Failed",
+                "interval": 1000,
+                "enabled": true
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T19:11:50.097941",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Failed",
+                "interval": 1000,
+                "enabled": true
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T19:13:02.326941",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Not Started",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T19:16:09.569135",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Not Started",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T19:30:38.960132",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Not Started",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T19:43:12.768007",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Not Started",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T21:15:45.638357",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Not Started",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T21:16:53.299921",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Not Started",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T21:17:53.446071",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T21:18:53.535247",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Failed",
+                "interval": 1000,
+                "enabled": true
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T21:19:53.629483",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Failed",
+                "interval": 1000,
+                "enabled": true
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T21:33:36.072638",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Not Started",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    },
+    {
+        "timestamp": "2024-03-07T21:34:21.473799",
+        "status": {
+            "TEMP0": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "TEMP1": {
+                "status": "Idle",
+                "interval": 60000,
+                "enabled": false
+            },
+            "SPI": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "GPIO": {
+                "status": "Running",
+                "interval": 1000,
+                "enabled": true
+            },
+            "CAN": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Memory": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Ethernet1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "Wifi": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "UART": {
+                "status": "Not Started",
+                "interval": 1000,
+                "enabled": true
+            },
+            "USB0": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "USB1": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "EMMC": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "SDCARD": {
+                "status": "Idle",
+                "interval": 1000,
+                "enabled": false
+            },
+            "JSON": {
+                "status": "Running",
+                "interval": 60000,
+                "enabled": true
+            }
+        }
+    }
+]

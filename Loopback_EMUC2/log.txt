@@ -1,0 +1,6 @@
+COM port  = /dev/ttyACM0
+baudrate  = 9
+interval  = 1 [ms]
+test_time = 0 [min]
+
+Pass !

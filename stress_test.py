@@ -31,26 +31,28 @@ import psutil
 import  json 
 from ctypes import cdll, c_char_p
 from datetime import datetime
+from io import StringIO
+import io
 
 #Modify these to set default state of the test bruh 
 test_status = {
     "TEMP0": {"status": "Not Started", "interval": 60000, "enabled": False},
     "TEMP1": {"status": "Not Started", "interval": 60000, "enabled": False},
     "SPI": {"status": "Not Started", "interval": 1000, "enabled": False},
-    "GPIO": {"status": "Not Started", "interval": 1000, "enabled": True},
+    "GPIO": {"status": "Not Started", "interval": 1000, "enabled": False},
     #"CAN0": {"status": "Not Started", "interval": 1000, "enabled": True},
     #"CAN1": {"status": "Not Started", "interval": 1000, "enabled": True},
-    "CAN": {"status": "Not Started", "interval": 1000, "enabled": True}, 
+    "CAN": {"status": "Not Started", "interval": 1000, "enabled": False}, 
     "Memory": {"status": "Not Started", "interval": 1000, "enabled": False},
     "Ethernet0": {"status": "Not Started", "interval": 1000, "enabled": False},
     "Ethernet1": {"status": "Not Started", "interval": 1000, "enabled": False},
     "Wifi": {"status": "Not Started", "interval": 1000, "enabled": False},
-    "UART": {"status": "Not Started", "interval": 1000, "enabled": True},
+    "UART": {"status": "Not Started", "interval": 1000, "enabled": False},
     "USB0": {"status": "Not Started", "interval": 1000, "enabled": False},
     "USB1": {"status": "Not Started", "interval": 1000, "enabled": False},
     "EMMC": {"status": "Not Started", "interval": 1000, "enabled": False},
     "SDCARD": {"status": "Not Started", "interval": 1000, "enabled": False},
-    "JSON": {"status": "Not Started", "interval": 60000, "enabled": True}
+    "JSON": {"status": "Not Started", "interval": 60000, "enabled": False}
 }
 # Global variables
 spi_device = None
@@ -690,7 +692,7 @@ def can_bus_test_inodisk():
     #Open Ini file
     ret = inodisk_c_lib.open_ini()
     if ret:
-        log.info("SYSTEM-TEST: Failed to open .ini configuration file.")
+        log.info(f"SYSTEM-TEST: Failed to open .ini configuration file. {ret}")
         #We disable CAN testing because .ini file was not found
         test_status["CAN"]["enabled"] = False
         test_status["CAN"]["status"] = "Failed"
@@ -704,18 +706,12 @@ def can_bus_test_inodisk():
             
              loopback_status = False
              try:
-    #             msg = bus.recv(timeout=2)  # Receive a message
-    #             msg_err = msg
-    #             if msg is not None:
-    #                 # Check if 'TEST' is in the message data
-    #                 if 'TEST' in msg.data.decode('utf-8', errors='ignore'):
-    #                     log.info(f"CAN: Recieved: {msg}")
-    #                     found_test = True
-    #                     # Wait for the specified interval before reading the next message
-    #                     test_status[test_name]["status"] = "Running"
-    #                 else:
-    #                     log.error(f"CAN: Wrong Data {msg}")
+                buffer = io.StringIO()
+                sys.stdout = buffer
                 ret = inodisk_c_lib.start_testing()
+                # recover the old stdout
+                sys.stdout = sys.stdout
+                log.info(buffer.getvalue());
                 if not ret:
                     test_status["CAN"]["status"] = "Running"
                 else:
