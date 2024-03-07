@@ -29,7 +29,7 @@ import serial
 import curses
 import psutil
 import  json 
-from ctypes import *
+from ctypes import cdll, c_char_p
 from datetime import datetime
 
 #Modify these to set default state of the test bruh 
@@ -38,8 +38,9 @@ test_status = {
     "TEMP1": {"status": "Not Started", "interval": 60000, "enabled": False},
     "SPI": {"status": "Not Started", "interval": 1000, "enabled": False},
     "GPIO": {"status": "Not Started", "interval": 1000, "enabled": True},
-    "CAN0": {"status": "Not Started", "interval": 1000, "enabled": True},
-    "CAN1": {"status": "Not Started", "interval": 1000, "enabled": True},
+    #"CAN0": {"status": "Not Started", "interval": 1000, "enabled": True},
+    #"CAN1": {"status": "Not Started", "interval": 1000, "enabled": True},
+    "CAN": {"status": "Not Started", "interval": 1000, "enabled": True}, 
     "Memory": {"status": "Not Started", "interval": 1000, "enabled": False},
     "Ethernet0": {"status": "Not Started", "interval": 1000, "enabled": False},
     "Ethernet1": {"status": "Not Started", "interval": 1000, "enabled": False},
@@ -943,8 +944,9 @@ def run_curses(stdscr):
     ethernet1_thread = threading.Thread(target=ping_from_interface, args=("eth1", "Ethernet1"))
     wifi_thread = threading.Thread(target=ping_from_interface, args=("wlan0", "Wifi"))
     json_thread = threading.Thread(target=dump_status_to_json)
-    can0_thread = threading.Thread(target=can_bus_test, args=("CAN0", "can0"))
-    can1_thread = threading.Thread(target=can_bus_test, args=("CAN1", "can1"))
+    can_thread = threading.Thread(target=can_bus_test_inodisk)
+    #can0_thread = threading.Thread(target=can_bus_test, args=("CAN0", "can0"))
+    #can1_thread = threading.Thread(target=can_bus_test, args=("CAN1", "can1"))
 
 
     draw_thread.start()
@@ -963,8 +965,9 @@ def run_curses(stdscr):
     ethernet1_thread.start()
     wifi_thread.start()
     json_thread.start()
-    can0_thread.start()
-    can1_thread.start()
+    #can0_thread.start()
+    #can1_thread.start()
+    can_thread.start()
     
     draw_thread.join()
     # input_thread.join()
@@ -982,8 +985,9 @@ def run_curses(stdscr):
     ethernet1_thread.join()
     wifi_thread.join()
     json_thread.join()
-    can0_thread.join()
-    can1_thread.join()
+    #can0_thread.join()
+    #can1_thread.join()
+    can_thread.join()
 
 def main():
     # curses.curs_set(0)
