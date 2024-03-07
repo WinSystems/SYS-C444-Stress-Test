@@ -682,7 +682,7 @@ def can_bus_test_inodisk():
     
     """
     log.info("SYSTEM-TEST: Starting CAN TEST Thread")     
-    global test_status, exit_flag
+    global test_status, exit_flag, inodisk_c_lib
     timeout = 5.0
     log.info("SYSTEM-TEST: CAN BUS on Stand By")     
     msg_err = None
@@ -931,6 +931,7 @@ def handle_additional_input(input_win, key):
     pass
 
 def run_curses(stdscr):
+    global inodisk_c_lib
     inodisk_c_lib = cdll.LoadLibrary("./Loopback_EMUC2/loopback.so")
     # stdscr.curs_set(0)
 
